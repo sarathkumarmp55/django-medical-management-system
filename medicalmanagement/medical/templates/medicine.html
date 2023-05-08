@@ -1,0 +1,173 @@
+{%extends 'userbase.html'%}
+{% block body %}
+
+<br>
+
+<div class="container">
+  <div class="row">
+    {% for i in medical%}
+  <div class="col-md-3">
+   
+    <div class="card" style="width: 15rem;" style="height: 15rem; width: 100%;">
+      <img src="{{i.prodImage}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.prodName}}</h5>
+        <p class="card-text">{{i.prodDescription}}<br><h6>{{i.prodPrice}}</h6></p>
+        <a href="/order" class="btn btn-primary">Buy</a>
+      </div>
+    </div>
+  </div>
+    {%endfor%}
+  </div></div>
+  <!-- <div class="col">
+    <div class="card">
+      <img src="https://cdn01.pharmeasy.in/dam/products/I02515/telma-h-40mg-strip-of-30-tablets-6.1-1646660959.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">TELMA 20/40/80 TAB</h5>
+        <p class="card-text">blood presure tablet<br><h6>MRP:123/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/dyfro1puaml0p8sxadyf.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">VIT D3 TAB</h5>
+        <p class="card-text">vitamins tablet<br><h6>MRP:156/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/pn7apngctvrtweencwi1.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">ACILOC 150/300 TAB</h5>
+        <p class="card-text">acidity tablet<br><h6>MRP:35/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/umflgttwixgqu7lfmvnl.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h3 class="card-title">NERVUP PG TAB</h3>
+        <p class="card-text">nerves related tablet<br><h6>MRP:588.00/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://wfmp-p-001-delivery.sitecorecontenthub.cloud/api/public/content/3a698afa315349e8aee6c462802dd54d?v=73449dad" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">EYEMIST DROPS</h5>
+        <p class="card-text">eye drops<br><h6>MRP:100/-bottle</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61q32G5cQsL._SL1500_.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">LACTOCALAMIN</h5>
+        <p class="card-text">skin lotion<br><h6>MRP:656/-bottle</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://www.netmeds.com/images/product-v1/600x600/323385/normabrain_400mg_capsule_10_s_0.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">NORMABRAIN TAB</h5>
+        <p class="card-text">nerves tablet<br><h6>MRP:135/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://newassets.apollo247.com/pub/media/catalog/product/g/l/gly0088_1.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h3 class="card-title">GLYCIPHAGE TAB</h3>
+        <p class="card-text">blood sugar tablet<br><h6>MRP:44.00/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn01.pharmeasy.in/dam/products/167920/tazloc-40mg-strip-of-10-tablets-3-1641534032.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">TAZLOC 20/40/80 TAB</h5>
+        <p class="card-text">blood presure tablet<br><h6>MRP:163/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://www.practostatic.com/practopedia-images/v3/res-750/neurobion-forte-tablet-immunity-booster-30-s_21a91fb7-e499-441f-809a-df655f3abcd2.JPG" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">NEUROBION FORT TAB</h5>
+        <p class="card-text">vitamins tablet<br><h6>MRP:15/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://www.netmeds.com/images/product-v1/600x600/4921/rantac_150mg_tablet_30s_31413_0_1.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">RANTAC 150/300 TAB</h5>
+        <p class="card-text">acidity tablet<br><h6>MRP:30/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/mqdfwomjrjv3lvlq08ae.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h3 class="card-title">ALEX COUGH SYRUP</h3>
+        <p class="card-text">dry cough syrup<br><h6>MRP:123.00/-bottle</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://static2.medplusmart.com/products/MEDI0018_L.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MEDIKER SHAMPOO</h5>
+        <p class="card-text">anti dandruff shampoo<br><h6>MRP:423/-bottle</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://newassets.apollo247.com/pub/media/catalog/product/h/u/hum0030_1_feb23.jpg" class="card-img-top" alt="..." height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">HUMINSULIN 40 IU</h5>
+        <p class="card-text">sugar insulin<br><h6>MRP:150/-bottle</h6></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://5.imimg.com/data5/ECOM/Default/2022/11/BH/KA/KD/147041411/vb7-hair-tablet-500x500.jpg" class="card-img-top" alt="..."height="300" width="300">
+      <div class="card-body">
+        <h5 class="card-title">VB7 HAIR TAB</h5>
+        <p class="card-text">vitamin tablet<br><h6>MRP:335/-strip</h6></p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+{% endblock body %}
+
+
+
+

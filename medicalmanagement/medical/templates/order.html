@@ -1,0 +1,58 @@
+{%extends 'userbase.html'%}
+{% block body %}
+
+
+<form method="post" id="k">
+  {%csrf_token%}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputtxt">NAME:</label>
+        <input type="text" class="form-control" id="inputtxt" placeholder="Enter ur name" name="oname">
+      </div>
+      <br>
+      <div class="form-group col-md-6">
+        <label for="inputtxt">ADDRESS:</label>
+        <input type="text" class="form-control" id="inputtxt" placeholder="ADDRESS" name="oaddress">
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="inputemail">EMAIL</label>
+      <input type="email" class="form-control" id="inputemail" placeholder="" name="oemail">
+    </div>
+    <br>
+
+    <select class="form-select"  name="select">
+    
+      <option selected>choose options...</option>
+      {% for i in med%}
+      <option value="{{i.prodName}}">{{i.prodName}}</option>
+      {%endfor%}
+     
+    </select>
+   
+    <br>
+    <select class="form-select" aria-label="Default select example" name="quantity">
+      <option selected>Quandity</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+
+    <div class="form-group">
+      <label for="inputemail">PHONE NUMBER:</label>
+      <input type="text" class="form-control" id="inputnumber" placeholder="" name="ophone">
+    </div>
+    <br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1"> <span style="color: red;"><b>if u want Cash on delivery</b></span></label>
+    </div>
+    <br>
+    
+    <button type="submit" class="btn btn-primary">place order</button>
+    <br>
+  </form>
+  {% endblock body %}

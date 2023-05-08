@@ -1,0 +1,158 @@
+{%extends 'base.html'%}
+{% block body %}
+
+<html>
+  <head>
+    <title></title>
+    <style>
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #16da3d;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #4909c0;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:rgb(220, 21, 21);
+    text-decoration:none;
+    }
+
+
+.container{
+            position: relative;
+            width: 100%;
+           
+          }
+          .container:hover .overlayy{
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+          }
+
+
+
+
+    </style>
+  </head>
+  <body>
+<br>
+<marquee><img src="https://us.123rf.com/450wm/maxborovkov/maxborovkov1809/maxborovkov180900067/110330061-autumn-welcome-sign-with-colorful-maple-leaves-vector-background.jpg?ver=6" height="70" width="100"></marquee>
+<br>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 h-70" src="https://www.regdesk.co/wp-content/uploads/2021/11/shutterstock_1101100952-900x506-1.jpeg" alt="First slide"  height="400">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-70 " src="https://thumbs.dreamstime.com/b/medical-student-equipment-books-stethoscope-pen-90538978.jpg" alt="Second slide"  height="400">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-70" src="https://wallpapercave.com/wp/wp2789220.jpg" alt="Third slide" height="400">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>      
+ <div id="tour-packages" class="top destination" style="background-color: #e2e7f1;">
+<div class="col-md-12 section-head">
+  <h2 style="text-align: center; color:#4e0e10;"><u>EXPLORE SOME OF OUR SPECIALITIES</u></h2> 
+  <br>
+  <span class="sub-head"></span>
+  <h6 style="text-align: center; color: #4e0e10;"><i>You don't appreciate life until you get to the other side. Like lying in a hospital bed.</i></h6>
+  <br>
+   </div>
+  <div class="container">
+  <div class="row">
+  <div class="col"><img src="https://www.spmmhospital.com/images/resource/Non-Invasive-Cardiology.jpg" alt="" class="card-img-top" style="height: 280px;"><h3 style="color: #21e60f;">CARDIOLOGY</h3><h6 style="color: #4e0e10;">Love U R Heart.He Become Loves U</h6> </div>
+  <div class="col"><img src="https://thumbs.dreamstime.com/b/lady-doctor-gently-touches-pregnant-woman-s-abdomen-her-hands-rundown-patients-pandemic-caused-covid-217373070.jpg" alt="" class="card-ing-top" style="height: 280px; width: 500px;"><h3 style="color: #21e60f;">GYNECOLOGY</h3><h6 style="color: #4e0e10;">The Most Magical Day Become A Mother</h6></div>
+  
+  
+  </div>  
+  <br>
+  <div class="row">
+    <div class="col"><img src="https://www.tschospital.com/uploads/departments/82.jpg" alt="" class="card-ing-top" style="height: 280px; width: 550PX;"><h3 style="color: #21e60f;">PEDIATRIC</h3><h6 style="color: #4e0e10;">Give UR Kids Only The Best Care</h6></div>
+    <div class="col"><img src="data:image/jpeg;base64,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" alt="" class="card-ing-top" style="height: 280px; width: 500PX;"><h3 style="color: #21e60f;">ORTHO PEDIATRIC</h3><h6 style="color: #4e0e10;">Absolutely Legendary orthopediatric surgeon</h6></div>
+    
+
+  </div>
+  
+</div>
+<br>
+<div class="text-center">
+<button type="button" class="btn btn-secondary" style="color: #21e60f;">FIND MORE CHEAK-UP<i class="fa-solid fa-arrow-right"></i></button>    
+</div>
+<br>
+ </div>
+ <br>
+<br>
+ <div class="container h-50">
+  <div class="d-flex justify-content-center h-100">
+      <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Enter Your Mail And Subscribe">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+      </div>
+  </div>
+</div>
+
+<br>
+<br>
+<footer>
+
+  
+<div class="centerdiv" style="padding: 1%; background-color: #e2e7f1;">
+  <h6 style="text-align: center;">Toll free No:<h3 style="text-align: center;"> 1-888-425-4747 </h3>(within India only)</h6>
+  <br>
+   <h6 style="text-align: center;">Department of Health, Government of india, Park View, Delhi, India - 695 033</h6>
+  <br>
+  <h6 style="text-align: center;">Phone: +91 471 2222222, Fax: +91 471 111111, E-mail: mountelizebethmedicalcentre@yahoo </h6>
+  <br>
+   <h6 style="text-align: center;">All rights reserved Hospital management. Copyright | Terms of Use | Cookie Policy | Contact Us. </h6>
+  <br> 
+  <h6 style="text-align: center;">Developed & Maintained by Sarathkumar mp.</h6> </div>
+  
+  
+  </footer>
+  
+  
+
+
+ </body>
+ </html>
+
+
+{% endblock body %}

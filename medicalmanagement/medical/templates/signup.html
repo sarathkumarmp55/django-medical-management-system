@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+{% block body %}
+<html>
+<head>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body id="g">
+
+
+<form method="post" id="k">
+  {%csrf_token%}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputtxt">NAME:</label>
+        <input type="text" class="form-control" id="inputtxt" placeholder="Enter ur name" name="name">
+      </div>
+      <br>
+      <div class="form-group col-md-6">
+        <label for="inputtxt">FATHER NAME:</label>
+        <input type="text" class="form-control" id="inputtxt" placeholder="Enter ur father name" name="fname">
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="inputemail">EMAIL</label>
+      <input type="email" class="form-control" id="inputemail" placeholder="" name="email">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="inputpswd">PASSWORD</label>
+      <input type="password" class="form-control" id="inputpswd" placeholder="" name="pass1">
+    </div>
+    <br>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputpswd">CONFIRM PASSWORD</label>
+        <input type="password" class="form-control" id="inputpswd" name="cpass1">
+      </div>
+    </div>
+   
+    <br>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+
+</body>
+</html>
+{% endblock body %}

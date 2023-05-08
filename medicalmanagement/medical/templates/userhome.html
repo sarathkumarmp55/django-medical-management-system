@@ -1,0 +1,144 @@
+{%extends 'userbase.html'%}
+{% block body %}
+
+<html>
+  <head>
+    <title></title>
+    <style>
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #16da3d;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #4909c0;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:rgb(220, 21, 21);
+    text-decoration:none;
+    }
+
+
+.container{
+            position: relative;
+            width: 100%;
+           
+          }
+          .container:hover .overlayy{
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+          }
+
+
+
+
+    </style>
+  </head>
+  <body>
+<br>
+<marquee><img src="https://freepngimg.com/thumb/special_offer/4-2-special-offer-free-png-image.png" height="70" width="100"></marquee>
+<br>
+<br>
+  <br>
+  <br>      
+ <div id="tour-packages" class="top destination" style="background-color: #e2e7f1;">
+<div class="col-md-12 section-head">
+  <h2 style="text-align: center; color:#4e0e10;"><u>WHAT R U EXPECTING FROM US</u></h2> 
+  <br>
+  <span class="sub-head"></span>
+  <h6 style="text-align: center; color: #4e0e10;"><i>Your life is importanat to us</i></h6>
+  <br>
+   </div>
+  <div class="container">
+  <div class="row">
+  <div class="col"><img src="https://d1ymz67w5raq8g.cloudfront.net/Pictures/1024x536/P/web/h/e/v/capsulesofmedicines_841208.jpg" alt="" class="card-img-top" style="height: 280px;"><h3 style="color: #21e60f;"><a href="/medicine">MEDICINES</a></h3><h6 style="color: #4e0e10;"></h6> </div>
+  <div class="col"><img src="https://www.athomeindependentliving.com/wp-content/uploads/2017/09/senior-couple-consulting-with-doctor-480x320.jpg" alt="" class="card-ing-top" style="height: 280px; width: 500px;"><h3 style="color: #21e60f;"><a href="">HOME CARE</a></h3><h6 style="color: #4e0e10;"></h6></div>
+  
+  
+  </div>  
+  <br>
+  <div class="row">
+    <div class="col"><img src="https://i.ytimg.com/vi/yPCQFhvrJPQ/maxresdefault.jpg" alt="" class="card-ing-top" style="height: 280px; width: 550PX;"><h3 style="color: #21e60f;"><a href="">CORONA CARE</a></h3><h6 style="color: #4e0e10;"></h6></div>
+    <div class="col"><img src="https://thumbs.dreamstime.com/b/young-couple-having-marriage-counselling-119405024.jpg" alt="" class="card-ing-top" style="height: 280px; width: 500PX;"><h3 style="color: #21e60f;"><a href="">COUNSELLING</a></h3><h6 style="color: #4e0e10;"></h6></div>
+    
+
+  </div>
+  
+</div>
+<br>
+<div class="text-center">
+<button type="button" class="btn btn-secondary" style="color: #21e60f;">FIND MORE<i class="fa-solid fa-arrow-right"></i></button>    
+</div>
+<br>
+ </div>
+ <br>
+<br>
+ <div class="container h-50">
+  <div class="d-flex justify-content-center h-100">
+      <div class="searchbar">
+          <input class="search_input" type="text" name="" placeholder="Enter Your Mail And Subscribe">
+          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+      </div>
+  </div>
+</div>
+
+<br>
+<br>
+<footer>
+
+  
+<div class="centerdiv" style="padding: 1%; background-color: #e2e7f1;">
+  <h6 style="text-align: center;">Toll free No:<h3 style="text-align: center;"> 1-888-425-4747 </h3>(within India only)</h6>
+  <br>
+   <h6 style="text-align: center;">Department of Health, Government of india, Park View, Delhi, India - 695 033</h6>
+  <br>
+  <h6 style="text-align: center;">Phone: +91 471 2222222, Fax: +91 471 111111, E-mail: mountelizebethmedicalcentre@yahoo </h6>
+  <br>
+   <h6 style="text-align: center;">All rights reserved Hospital management. Copyright | Terms of Use | Cookie Policy | Contact Us. </h6>
+  <br> 
+  <h6 style="text-align: center;">Developed & Maintained by Sarathkumar mp.</h6> </div>
+  
+  
+  </footer>
+  
+  
+
+
+ </body>
+ </html>
+
+
+{% endblock body %}
